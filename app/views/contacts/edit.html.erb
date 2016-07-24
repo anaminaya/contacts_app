@@ -1,0 +1,31 @@
+<h1> Edit Form:</h1>
+
+
+<div>
+
+<%= form_tag("/contact/", method: 'patch') do %>
+  <div>
+   <%= label_tag(:first_name) %>
+   <%= text_field_tag(:first_name, @contacts.first_name) %>
+  </div>
+
+  <div>
+  <%= label_tag(:last_name) %>
+   <%= text_field_tag(:last_name, @contacts.last_name) %>
+  </div>
+
+  <div>
+   <%= label_tag(:email) %>
+    <%= text_field_tag(:email, @contacts.email) %>
+  </div>
+
+  <div>
+   <%= label_tag(:phone_number) %>
+    <%= text_field_tag(:phone_number, @contacts.phone_number) %>
+  </div>
+
+   <div>
+     <%= submit_tag("Edit Product") %>
+   </div>
+ </div>
+<% end %>

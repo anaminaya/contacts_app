@@ -1,0 +1,12 @@
+<h1> Contacts </h1>
+
+<p><%= @contacts.full_name %></p>
+<p> <%= @contacts.email %></p>
+<p> <%= @contacts.friendly_format_date %></p>
+<p> <%= @contacts.phone_number %></p>
+<p> <%= @contacts.japan_prefix %></p>
+
+
+<p><%= link_to "Edit your contact", "/contact/#{@contacts.id}/edit" %>
+<p><%= link_to "Back to all contacts","/contact"%></p>
+<p><%= link_to "Delete", "/contact/#{@contacts.id}" %></p>
